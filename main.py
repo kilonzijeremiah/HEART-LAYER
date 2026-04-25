@@ -40,3 +40,7 @@ async def execute(request: ExecuteRequest, background_tasks: BackgroundTasks):
 @app.get("/runtime/{project_id}")
 async def get_runtime(project_id: str):
     return runtime_db.get(project_id, {"error": "Not found"})
+
+@app.get("/")
+def home():
+    return {"message": "API is running"}
