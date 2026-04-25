@@ -1,9 +1,6 @@
-fastapi
-uvicorn
+flask
 pandas
 scikit-learn
 numpy
 python-multipart
-flask
-pandas
-scikit-learn
+uvicorn
