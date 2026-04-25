@@ -4,3 +4,6 @@ pandas
 scikit-learn
 numpy
 python-multipart
+flask
+pandas
+scikit-learn
