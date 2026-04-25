@@ -3,6 +3,20 @@ from models import ExecuteRequest
 from executor import execute_task
 from runtime_store import runtime_db
 
+print("Starting app...")
+
+from fastapi import FastAPI, BackgroundTasks
+print("FastAPI imported")
+
+from models import ExecuteRequest
+print("Models imported")
+
+from executor import execute_task
+print("Executor imported")
+
+from runtime_store import runtime_db
+print("Runtime store imported")
+
 app = FastAPI()
 
 # 🔥 Brain → Heart
