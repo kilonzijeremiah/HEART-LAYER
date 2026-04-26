@@ -1,11 +1,12 @@
 from fastapi import FastAPI, BackgroundTasks
 from models import ExecuteRequest
 from executor import execute_task
-import runtime_store
+from runtime_store import runtime_db
 
 app = FastAPI()
 
 runtime_db = runtime_store.runtime_db
+
 
 
 @app.get("/")
