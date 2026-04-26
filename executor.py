@@ -1,5 +1,5 @@
-import time
 from runtime_store import runtime_db
+import time
 
 def execute_task(request):
     project_id = request.project_id
