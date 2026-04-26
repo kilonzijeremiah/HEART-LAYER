@@ -7,10 +7,8 @@ def execute_task(request):
     project_id = request.project_id
 
     try:
-        # Simulate processing
-        time.sleep(3)
+        time.sleep(2)
 
-        # Example logic (replace with real work)
         result = {
             "message": f"Executed {request.task_type}",
             "data": request.payload
