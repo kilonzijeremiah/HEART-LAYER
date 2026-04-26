@@ -1,7 +1,5 @@
 import time
-import runtime_store
-
-runtime_db = runtime_store.runtime_db
+from runtime_store import runtime_db
 
 def execute_task(request):
     project_id = request.project_id
