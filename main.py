@@ -7,9 +7,11 @@ app = FastAPI()
 
 runtime_db = runtime_store.runtime_db
 
+
 @app.get("/")
 def home():
     return {"message": "API is running"}
+
 
 @app.post("/internal/execute")
 async def execute(request: ExecuteRequest, background_tasks: BackgroundTasks):
@@ -23,6 +25,7 @@ async def execute(request: ExecuteRequest, background_tasks: BackgroundTasks):
     background_tasks.add_task(execute_task, request)
 
     return {"message": "Task started", "project_id": project_id}
+
 
 @app.get("/runtime/{project_id}")
 async def get_runtime(project_id: str):
