@@ -1,11 +1,11 @@
-from runtime_store import runtime_db
 import time
+from runtime_store import runtime_db
 
 def execute_task(request):
     project_id = request.project_id
 
     try:
-        time.sleep(2)
+        time.sleep(3)
 
         result = {
             "message": f"Executed {request.task_type}",
