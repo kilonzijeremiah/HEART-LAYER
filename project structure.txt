@@ -1,9 +1,0 @@
-HEART-LAYER/
-│── heart_api/
-│   ├── __init__.py   ✅
-│   ├── main.py
-│   ├── executor.py
-│   ├── models.py
-│   ├── runtime_store.py
-│── requirements.txt
-│── runtime.txt
